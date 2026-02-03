@@ -38,18 +38,17 @@ if menu == "Researcher Profile":
     st.sidebar.header("Profile Options")
 
     # Collect basic information
-    name = "Dr. Jane Doe"
-    field = "Astrophysics"
-    institution = "University of Science"
+    name = "Mr. Conrad Dawid Kriel"
+    field = "Chemical Engineering"
+    institution = "Stellenbosch University"
 
     # Display basic profile information
     st.write(f"**Name:** {name}")
     st.write(f"**Field of Research:** {field}")
     st.write(f"**Institution:** {institution}")
+    st.write("Degree: Bachelor of Engineering Chemical")
     
-    st.image(
-    "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
-    caption="Nature (Pixabay)"
+    st.image("degree.jpg", caption="Official Certificate"
 )
 
 elif menu == "Publications":

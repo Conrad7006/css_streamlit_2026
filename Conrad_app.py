@@ -77,6 +77,26 @@ elif menu == "STEM Data Explorer":
 
 elif menu == "Hobbies":
     # Add a contact section
-    st.header("Contact Information")
-    email = "jane.doe@example.com"
-    st.write(f"You can reach me at {email}.")
+    st.header("Some hobbies I enjoy")
+    
+    st.sidebar.header("Hobby selection")
+    
+    # Tabbed view for Hobbies
+    hobby_option = st.sidebar.selectbox(
+        "Choose a hobby to view", 
+        ["Paddling", "Ultimate Frisbee"]
+    )
+    
+    if hobby_option == "Paddling":
+        st.write("My main sport is canoeing. I love paddling on the river and on the ocean.")
+        st.write("Below are two pictures: The first is a picture of the Breede River Marathon and the second is our Maties Team winning the most finishers trophee at the Berg River Marathon")
+        st.image("Assets/Paddle.jpeg")
+        st.image("Assets/Team.jpeg")
+        
+    elif hobby_option == "Ultimate Frisbee":
+        st.write("I am also a member of the Eendrag Ulitimate Eagles frisbee team. Our team has won the residence league two years in a row!")
+        st.image("Assets/Frisbee.jpeg")
+    
+    
+    
+    

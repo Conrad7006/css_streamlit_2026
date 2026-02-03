@@ -53,6 +53,13 @@ if menu == "Researcher Profile":
     st.write("Degree: Bachelor of Engineering Chemical")
     
     image_path = BASE_DIR / "Assets" / "degree.jpg"
+    
+    st.write("BASE_DIR:", BASE_DIR)
+    st.write("Files in BASE_DIR:", list(BASE_DIR.iterdir()))
+    assets_dir = BASE_DIR / "Assets"
+    st.write("Assets exists:", assets_dir.exists())
+    st.write("Assets contents:", list(assets_dir.iterdir()) if assets_dir.exists() else "NO ASSETS DIR")
+    
     st.image(image_path, caption="Official Certificate")
 
 elif menu == "Publications":

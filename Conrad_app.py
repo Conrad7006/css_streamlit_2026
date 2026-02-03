@@ -55,7 +55,7 @@ elif menu == "STEM Data Explorer":
         
         st.write("The Hulbert model, as implemented by Le Roux et al. 2013, has been validated in this work. The two graphs below can be compared")
         st.image("Assets/Mill_original.png", caption = "From Le Roux et al. 2013")
-        st.imgae("Assets/Mill_compare.png", caption = "From this work")
+        st.image("Assets/Mill_compare.png", caption = "From this work")
 
     elif data_option == "Flotation model":
         st.write("### The Flotation Bank")
@@ -64,7 +64,7 @@ elif menu == "STEM Data Explorer":
         
         st.write("The model from Auret et al. 2025 was implemented into Julia and the sump tank response to step changes can be compared below.")
         st.image("Assets/Float_original.png", caption = "From Auret et al. 2025")
-        st.imgae("Assets/Float_compare.png", caption = "From this work")
+        st.image("Assets/Float_compare.png", caption = "From this work")
 
     elif data_option == "Crusher model":
         st.write("### The Cone Crusher")

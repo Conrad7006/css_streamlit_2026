@@ -39,7 +39,7 @@ if menu == "Researcher Profile":
 
     # Collect basic information
     name = "Mr. Conrad Dawid Kriel"
-    field = "Chemical Engineering"
+    field = "Process control and monitoring"
     institution = "Stellenbosch University"
 
     # Display basic profile information
@@ -48,7 +48,7 @@ if menu == "Researcher Profile":
     st.write(f"**Institution:** {institution}")
     st.write("Degree: Bachelor of Engineering Chemical")
     
-    st.image("degree.jpg", caption="Official Certificate"
+    st.image("Assets/degree.jpg", caption="Official Certificate"
 )
 
 elif menu == "Publications":

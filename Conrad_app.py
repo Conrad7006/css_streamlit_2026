@@ -1,10 +1,6 @@
 import streamlit as st
 import pandas as pd
 # import numpy as np
-from pathlib import Path
-
-# Fix the base directory
-BASE_DIR = Path(__file__).parent
 
 # Set page title
 st.set_page_config(page_title="Researcher Profile and STEM Data Explorer", layout="wide")
@@ -52,15 +48,7 @@ if menu == "Researcher Profile":
     st.write(f"**Institution:** {institution}")
     st.write("Degree: Bachelor of Engineering Chemical")
     
-    image_path = BASE_DIR / "Assets" / "degree.jpg"
-    
-    st.write("BASE_DIR:", BASE_DIR)
-    st.write("Files in BASE_DIR:", list(BASE_DIR.iterdir()))
-    assets_dir = BASE_DIR / "Assets"
-    st.write("Assets exists:", assets_dir.exists())
-    st.write("Assets contents:", list(assets_dir.iterdir()) if assets_dir.exists() else "NO ASSETS DIR")
-    
-    st.image(image_path, caption="Official Certificate")
+    st.image("Assets/Degree.jpg", caption="Official Certificate")
 
 elif menu == "Publications":
     st.title("Publications")

@@ -1,6 +1,10 @@
 import streamlit as st
 import pandas as pd
 # import numpy as np
+from pathlib import Path
+
+# Fix the base directory
+BASE_DIR = Path(__file__).parent
 
 # Set page title
 st.set_page_config(page_title="Researcher Profile and STEM Data Explorer", layout="wide")
@@ -48,8 +52,8 @@ if menu == "Researcher Profile":
     st.write(f"**Institution:** {institution}")
     st.write("Degree: Bachelor of Engineering Chemical")
     
-    st.image("Assets/degree.jpg", caption="Official Certificate"
-)
+    image_path = BASE_DIR / "Assets" / "degree.jpg"
+    st.image(image_path, caption="Official Certificate")
 
 elif menu == "Publications":
     st.title("Publications")
